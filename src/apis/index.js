@@ -1,0 +1,25 @@
+import axios from "axios";
+import {BASE_URL} from "../utils/app";
+import userStorage from "../store/local/user";
+
+const api = axios.create({
+  baseURL: BASE_URL,
+});
+
+api.interceptors.request.use(
+  (config) => {
+    const token = userStorage.getItem("token");
+    if (token) {
+      config.headers["authorization"] = token;
+    }
+    // const token =
+    //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTAzNjg0ZTk3ZWIwMzJjMzNiMzYyMjAiLCJuYW1lIjoiVXNlciAxIiwiZW1haWwiOiJ1c2VyMUBnbWFpbC5jb20iLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjI3NjEzMjY3fQ.rNeohtluFRBU2duAXs3gUZo7x73WU60IdPdlX7kJp8E";
+    // config.headers["authorization"] = token;
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+export default api;

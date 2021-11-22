@@ -1,0 +1,92 @@
+.greate_what_job_checkbox {
+  display: flex;
+  gap: 10px 10px;
+}
+.select_category {
+  margin-bottom: 20px;
+}
+.greate_what_job_checkbox label {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0px;
+}
+
+.greate_what_job_checkbox input[type="radio"] {
+  display: none;
+}
+.greate_what_job_checkbox label span {
+  background-color: #dfdfdf;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 0px;
+  font-size: 16px;
+  color: #232323;
+  display: inline-block;
+  text-transform: capitalize !important;
+}
+.greate_what_job_checkbox input[type="radio"]:checked ~ span {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.provider_fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px 0px;
+  margin-bottom: 20px;
+}
+.provider_plan_fields > label {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  color: #242424;
+}
+.select_price input {
+  padding: 0 20px 0 58px;
+  height: 56px;
+  font-weight: 400;
+  border: 2px solid transparent;
+  background: #f5f5f5;
+  width: 100% !important;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #bdbac2 !important;
+}
+.select_price input:focus {
+  border: 2px solid #2196f3 !important;
+}
+.select_price {
+  position: relative;
+}
+
+.select_price i {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 24px;
+  color: #bdbac2 !important;
+  display: flex;
+  padding: 0 10px 0 20px;
+  height: 100%;
+  align-items: center;
+}
+.main .start .content .callout,
+.sidebar .settings .categories .category:last-of-type {
+  display: block;
+  padding-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .main,
+  .main .start,
+  .sidebar {
+    /* height: 100% !important;
+    overflow: auto;
+    padding: 20px 0px; */
+  }
+}
+
+#login-layout {
+  height: 100vh !important;
+}

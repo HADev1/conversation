@@ -1,0 +1,36 @@
+.login-heading-container {
+  padding-bottom: 4.5rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+  /* padding: 10px 0; */
+  /* line-height: 2px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.heading-primary {
+  /* text-transform: uppercase; */
+  color: #fd6c00;
+}
+
+.heading-secondary {
+  /* color: #5b31ea; */
+  /* color: linear-gradient(145deg,rgb(140, 167, 255) 0,rgb(139, 84, 249) 50%,rgb(129, 31, 242) 100%); */
+  /* color: rgba(129, 31, 242, 1); */
+  color: rgb(129, 78, 187);
+}
+
+.heading-tertiary {
+  color: #6ed06e;
+  font-weight: normal !important;
+}
+
+.login-text-bottom {
+  margin-top: 2.2rem;
+  text-align: center;
+  color: rgb(84, 86, 225);
+}
+
+.login-p {
+  font-size: 12px;
+}
